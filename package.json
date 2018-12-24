@@ -1,0 +1,25 @@
+{
+  "name": "zaim-rest-api-sample",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "NODE_ENV=development node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "config": "^3.0.1",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "express-session": "^1.15.6",
+    "morgan": "^1.9.1",
+    "oauth": "^0.9.15",
+    "passport": "^0.4.0",
+    "passport-oauth1": "^1.1.0",
+    "pug": "^2.0.3"
+  }
+}

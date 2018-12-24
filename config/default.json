@@ -1,0 +1,8 @@
+{
+  "zaim": {
+    "consumerId": "<put your app id>",
+    "consumerSecret": "<put your app secret>",
+    "userToken": "<put your user-token>",
+    "userTokenSecret": "<put your user-token-secret>"
+  }
+}

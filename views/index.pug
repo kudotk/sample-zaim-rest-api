@@ -1,0 +1,27 @@
+extends _layout
+
+block content
+    div.container.mt-5.mr-0.mb-0.ml-0
+        h2.font-weight-light OAuth
+        a.mt-2.btn.btn-primary(href="/auth" role="button") 認証実行
+        div.row.mt-2.ml-0.mr-0.mb-0.p-0
+            small.text-muted.w-100
+                | [認証が完了]画面でリダイレクトされない場合、
+                br
+                | Chromeの開発者ツールなどでソースを開き、
+                span.text-success.font-weight-bold div.callbackのURL
+                | をブラウザで開いてOAuthトークンを取得してください。
+    div.container.mt-5.mr-0.mb-0.ml-0
+        div.container.p-0.m-0
+            h2.font-weight-light ユーザー情報の取得
+            a.btn.btn-primary.mt-2(href="/user/info" role="button") 実行
+    div.container.mt-5.mr-0.mb-0.ml-0
+        div.container.p-0.m-0
+            h2.font-weight-light 合計金額の取得
+            form(action="/category/total" method="POST")
+                .form-group
+                    label(for="category")
+                    input.form-control.w-25(type="text" name="category" placeholder="カテゴリを入力" aria-describedby="categoryHelp")
+                    small#categoryHelp.form-text.text-muted
+                        | 合計金額を取得したいカテゴリを入力
+                    button.btn.btn-primary.mt-2(type="submit") 実行
